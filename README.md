@@ -53,7 +53,7 @@ football_ticket_db
 Paste your public ERD link here:
 
 ```text
-https://your-erd-link-here
+https://drive.google.com/file/d/1VOQ8Dm-Vx41Tioprzznqno6KybfN_qNH/view?usp=drive_link
 ```
 
 ---
