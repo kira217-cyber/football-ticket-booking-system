@@ -151,3 +151,25 @@ VALUES
     (505, 3, 102, 'C-20', 'Pending', 120.00);
 
 
+-- Verify that all user records were inserted successfully
+SELECT * FROM users;
+
+
+-- Verify that all match records were inserted successfully
+SELECT * FROM matches;
+
+
+-- Verify that all booking records were inserted successfully
+SELECT * FROM bookings;
+
+
+-- Query 1: Retrieve all available Champions League football matches
+
+SELECT
+    match_id,
+    fixture,
+    base_ticket_price
+FROM Matches
+WHERE tournament_category = 'Champions League'
+  AND match_status = 'Available';
+
