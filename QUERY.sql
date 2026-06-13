@@ -223,4 +223,17 @@ ORDER BY
     u.user_id,
     b.booking_id;
 
-
+-- Query 6: Retrieve bookings with a total cost higher than the average booking cost
+SELECT
+    booking_id,
+    match_id,
+    total_cost
+FROM
+    Bookings
+WHERE
+    total_cost > (
+        SELECT
+            AVG(total_cost)
+        FROM
+            Bookings
+    );
